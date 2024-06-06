@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+body{
+    background-color: #dcdcdc;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: cursive;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.center{
+    margin: auto;
+    display: block;
+    max-width: 525px;
+    max-height: 646px;
+    border: #000 2px solid;
+    padding: 20px;
+    cursor: pointer;
+    
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    justify-content: center;
+    
+}
+
+.center:hover{
+   animation: 1s animationfromdownload ease-in; 
+   transform: scale(1.2);
+}
+
+@keyframes animationfromdownload {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+.text-download{
+    font-family: fantasy;
+    font-size: 50px;
+    text-decoration: none;
+    color: #5862ec;
+}
+
+.text-download:hover{
+    animation: 3s colorchange;
+    color: #008000;
+    text-decoration: underline;
+    
+}
+
+
+@keyframes colorchange {
+    from{
+        color: #5862ec;
+    }
+    to{
+        color: #008000;
+    }
+}
+
+.left,
+.right{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.left{
+    transform: scaleX(-1);
+    margin-right: auto;
+
+}
+
+.right{
+    margin-left: auto;
+}
+
+aside{
+    position: fixed;
+    display: block;
+    right: 0;
+    height: 100%;
+    max-width: 10%;
+}
+
+.logo{
+    right: 0;
+    top: 50%;
+    bottom: 120px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.logo:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.aprovado{
+    width: 70px;
+
+}
